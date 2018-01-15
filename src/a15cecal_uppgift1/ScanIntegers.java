@@ -5,7 +5,7 @@ import java.util.Scanner;
 
 
 //scans text and parse it
-public class SortIntegers {
+public class ScanIntegers {
 private static Scanner scanner = new Scanner(System.in);
 private static Scanner scanner2 = new Scanner(System.in);
 
