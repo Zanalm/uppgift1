@@ -6,15 +6,15 @@ import java.util.Scanner;
 
 //scans text and parse it
 public class ScanIntegers {
-private static Scanner scanner = new Scanner(System.in);
-private static Scanner scanner2 = new Scanner(System.in);
 
 // Asks the user to decide how many numbers to input than puts the value in an array
 public static void main(String[] args) {
+	Scanner scanner = new Scanner(System.in);
     System.out.println("How many numbers do you want to sort?");
     int[] IntArray = getIntegers(scanner.nextInt());
     IntArray = sortIntegers(IntArray);
     printIntegers(IntArray);
+    scanner.close();
 
 }
 
@@ -22,10 +22,11 @@ public static void main(String[] args) {
 public static int[] getIntegers(int number) {
     System.out.println("Enter " + number + " numbers.");
     int[] values = new int[number];
-
+	Scanner scanner2 = new Scanner(System.in);
     for (int i = 0; i < values.length; i++) {
         values[i] = scanner2.nextInt();
     }
+    scanner2.close();
     return values;
 }
 
