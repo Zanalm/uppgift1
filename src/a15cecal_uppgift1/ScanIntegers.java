@@ -50,10 +50,10 @@ public static int[] sortIntegers(int[] unsorted) {
     return numbers;
 }
 
-// writes out all the sorted numbers
+// writes out all the sorted numbers on a horizontal line
 public static void printIntegers(int[] array){
     for(int i = 0; i < array.length; i++){
-        System.out.println(array[i]);
+        System.out.print(array[i] + " ");
     }
 }
 }
